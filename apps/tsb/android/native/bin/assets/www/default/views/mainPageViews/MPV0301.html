@@ -1,0 +1,37 @@
+<ion-view view-title="台新銀行"> 
+	<ion-content class="MPV0301" scroll="false">
+	
+		<table>
+			<tr>
+				<td>帳號</td>
+				<td>{{dataList[0].acct}}</td>
+			</tr>											
+		</table>	
+		<div style="margin:20px;">
+			<ion-list>
+				<ion-item class="row tittle">
+					<div class="col">日期</div>
+					<div class="col">支出/存入</div>
+					<div class="col">金額</div>
+				</ion-item>	
+				<ion-scroll>
+					<ion-refresher on-refresh="refreshList()"></ion-refresher>
+		
+					<ion-item class="row" ng-repeat="data in dataList" ng-click="go(data)">
+						<div class="col">{{data.txDate | dateFormat}}</div>
+						<div class="col">{{data.type | typeFormat}}</div>
+						<div class="col" ng-class="data.type === 'D' ? 'textGreen' : 'textRed' ">{{data.amt}}</div>
+					</ion-item>		
+					
+					
+					 <ion-infinite-scroll 
+					 		ng-if="!noMoreItemsAvailable"
+				            on-infinite="loadMore()"  
+				            distance="10%">
+					 </ion-infinite-scroll>				
+				</ion-scroll>
+			
+			</ion-list>
+		</div>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,270 @@
+
+/* Stylesheet content from css/style.css in folder common */
+/*台新銀行logo*/
+.toolbar-logo {
+    height: 27px !important;
+    width: 118px !important;
+    margin-top: 10px;
+}
+
+/*字體選擇*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button, .tittle {
+    font-family: "微軟正黑體";
+}
+
+/* scroll隱藏 */
+.scroll-bar-h, .scroll-bar-v  {
+    display: none;
+}
+
+/*header*/
+.nav-bar-block, .bar {
+  background-color: inherit !important;
+}
+.bar-tsb {
+    border-color: #DB2128;
+    background-color: #DB2128;
+    background-image: linear-gradient(0deg,#DB2128,#DB2128 50%,transparent 50%);
+    color: #fff;
+}
+.bar-header i:before {
+    color: #fff;
+    font-size: 20px !important;
+}
+.btn-clear {
+	background: transparent;
+	color: #fff;
+}
+.bar-header .button.activated {
+    background: transparent !important;
+}
+
+/* mainPage*/
+.notice {
+    background-image: url('../images/icons/home_header_notice_gray.png') !important;
+    background-size: 20px 20px !important;
+    background-repeat: no-repeat !important;
+    min-width: 30px !important;
+    margin: 5px;
+}
+.notice span.badge {
+    font-size: 12px;
+    padding: 3px 5px;
+    position: absolute;
+    top: -2px;
+    left: 15px;
+    zoom: 0.8;
+}
+.menu-icon-border {
+    border: 1px solid #DB2128;
+    border-radius: 99px;
+    text-align: center;
+    margin: auto; 
+    padding: 0.5em;
+    height: 85px;
+    width: 85px;
+    color: #DD3E43;
+}
+.menu-icon-border i {
+    font-size: 40px;
+    line-height: 1.8em;
+}
+.menu-icon-size {
+    height: 70px;
+    width: 70px;
+}
+.menu-list-text {
+    font-weight: bold;
+    color: #595757;
+    text-align: center;
+}
+
+.MPV .slider {
+    border: 1px solid #A2A2A2;
+}
+.MPV .slider-slide {
+    height: 110px;
+}
+.MPV ion-slide img {
+    width: 100%;
+    height: 110px;
+}
+.MPV .slider-pager {
+    bottom: 10px;
+}
+.MPV .slider-pager .slider-pager-page {
+    color: #DD3E43;
+    opacity: .1;
+    font-size: xx-small;
+}
+.slider-pager .slider-pager-page.active {
+    opacity: 1;
+}
+
+/* MPV0101 */
+.MPV0101 {
+    background-color: #E9E9E9;
+}
+.MPV0101 .btn {
+    box-shadow: 1px 1px 5px;
+    width: 80%;
+    margin: 10px auto;
+    font-size: 14px;
+}
+
+/* MPV0201 */
+.MPV0201 {
+    background-color: #E9E9E9;
+}
+.MPV0201 table {
+    margin: 1em auto;
+    width: 90%;
+    box-shadow: 1px 1px 5px #858585;
+    background-color: #fff;
+}
+.MPV0201 table td {
+    padding: 10px;
+    border: 1px dashed #ddd;
+}
+.MPV0201 table td:nth-of-type(1) {
+    text-align: right;
+    color: #DB2128;
+    font-weight: bold;
+}
+
+
+/* MPV0301 */
+.MPV0301 {
+    background-color: #E9E9E9;
+}
+.MPV0301 table {
+    margin: 1em auto;
+    width: 90%;
+    box-shadow: 1px 1px 5px #858585;
+    background-color: #fff;
+}
+.MPV0301 table td {
+    padding: 10px;
+    border: 1px dashed #ddd;
+}
+.MPV0301 table td:nth-of-type(1) {
+    text-align: right;
+    color: #DB2128;
+    font-weight: bold;
+}
+.MPV0301 .list {
+    border: 1px dashed #ddd;
+    box-shadow: 1px 1px 5px #858585;
+}
+
+.MPV0301 .list .overflow-scroll>.scroll.overscroll {
+	padding-left:20px;
+	padding-right:20px;
+}
+
+.MPV0301 .list .item {
+	font-size: 14px;
+}
+.MPV0301 ion-list .tittle {
+    color: #DB2128;
+    font-weight: bold;
+}
+.MPV0301 ion-scroll {
+	height: 65vh;
+}
+.MPV0301 ion-list ion-item:nth-of-type(even) {
+	background: #E9E9E9;
+}
+.MPV0301 ion-list ion-item .row:nth-of-type(1) .col:nth-of-type(1), .MPV0301 ion-list ion-item .col:nth-of-type(2) {
+	text-align: center;
+}
+.MPV0301 ion-list ion-item .col:nth-of-type(3) {
+	text-align: right;
+}
+.textGreen {
+	color: green;
+}
+.textRed {
+	color: red;
+}
+
+
+/* MPV0302 */
+.MPV0302 {
+    background-color: #E9E9E9;
+}
+.MPV0302 table {
+    margin: 1em auto;
+    width: 90%;
+    box-shadow: 1px 1px 5px #858585;
+    background-color: #fff;
+}
+.MPV0302 table td {
+    padding: 10px;
+    border: 1px dashed #ddd;
+}
+.MPV0302 table td:nth-of-type(1) {
+    text-align: right;
+    color: #DB2128;
+    font-weight: bold;
+}
+
+/* loginModal */
+#loginModal {
+    background-color: #E9E9E9;
+}
+#loginModal .bar-tsb {
+    background-color: #DB2128 !important;
+}
+#loginModal .bar-tsb .title {
+    color: #fff !important;
+}
+#loginModal .bar-tsb .button:hover {
+    color: #fff;
+    background: transparent;
+}
+#loginModal ion-content span {
+    color: #DB2128;
+    font-weight: bold;
+    font-size: 14px;
+}
+#loginModal ion-content input {
+    margin-left: 1em;
+}
+#loginModal ion-content .btn {
+    box-shadow: 1px 1px 5px;
+    width: 80%;
+    margin: 10px auto;
+    font-size: 14px;
+}
+
+/* MPV0401 */
+.MPV0401 {
+    background-color: #E9E9E9;
+}
+.MPV0401 span {
+    color: #DB2128;
+    font-weight: bold;
+    font-size: 14px;
+}
+.MPV0401 input {
+    margin-left: 1em;
+}
+.MPV0401 .btn {
+    box-shadow: 1px 1px 5px;
+    width: 80%;
+    margin: 10px auto;
+    font-size: 14px;
+}

@@ -1,0 +1,11 @@
+<ion-view view-title='照片上傳'>
+    <ion-content class="MPV0601" scroll="false">
+        <div style="text-align: center">
+            <button class="button" ng-click="chooseSourceType()"><i class="ion-upload"></i> 上傳照片</button>
+            <button class="button" ng-click="showPicture()"><i class="ion-image"></i> 我的照片</button>
+        </div>
+        <div class="imgCanvas">
+            <img ng-src="{{imgURL}}" style="width: 100%;">
+        </div>
+    </ion-content>
+</ion-view>

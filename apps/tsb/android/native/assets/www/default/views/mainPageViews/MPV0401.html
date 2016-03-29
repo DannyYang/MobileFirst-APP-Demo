@@ -1,0 +1,18 @@
+<ion-view view-title="台新銀行"> 
+	<ion-content class="MPV0401">
+
+		<div class="padding">
+	  		<label class='item item-input'>
+	  			<span>接收者暱稱</span>
+	    		<input type='text' ng-model='data.rid' placeholder='接收者暱稱'>
+	  		</label>
+  			<label class='item item-input'>
+  				<span>訊息</span>
+    			<input type='text' ng-model='data.msg' placeholder='請輸入訊息'>
+  			</label>
+	  	</div>
+	  
+		<button class="button button-block button-light btn" ng-click="send();">傳送</button>    
+	 
+	</ion-content>
+</ion-view>
