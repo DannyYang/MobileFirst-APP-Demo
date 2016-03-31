@@ -1,5 +1,6 @@
 package com.tsb;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
@@ -13,6 +14,8 @@ import com.worklight.androidgap.api.WLInitWebFrameworkListener;
 
 public class tsb extends CordovaActivity implements WLInitWebFrameworkListener {
 	
+	public static Activity thisActivity;
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
@@ -22,6 +25,8 @@ public class tsb extends CordovaActivity implements WLInitWebFrameworkListener {
 		WL.getInstance().showSplashScreen(this);
 
 		WL.getInstance().initializeWebFramework(getApplicationContext(), this);
+		
+		thisActivity = this;
 		
 	}
 

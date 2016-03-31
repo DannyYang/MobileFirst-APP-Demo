@@ -183,4 +183,9 @@
     <feature name="PushPlugin">
   		<param name="android-package" value="com.plugin.gcm.PushPlugin" />
 	</feature>
+	
+    <feature name="AppToAppPlugin">
+  		<param name="android-package" value="com.plugin.AppToAppPlugin" />
+	</feature>
+    
 </widget>

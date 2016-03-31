@@ -3,9 +3,10 @@
  */
 
 app.factory('APIService', function($http, $cordovaFileTransfer, $ionicLoading) {
-    var serviceContextRoot = "http://YOUR_SERVICE_IP:8080/PushServer";
-    var accountService = "http://YOUR_SERVICE_IP:8080/Demo/DepositDetails";
-    var serverURL = "YOUR_SERVICE_IP:8080/ServletFileUploadSample/upload";
+    var serviceContextRoot = "http://YOUR_SERVER_IP:8080/PushServer";
+    var accountService = "http://YOUR_SERVER_IP:8080/Demo/DepositDetails";
+
+    var serverURL = "http://YOUR_SERVER_IP:8080/ServletFileUploadSample/upload";
 
     return {
         // 與Server註冊推播通知

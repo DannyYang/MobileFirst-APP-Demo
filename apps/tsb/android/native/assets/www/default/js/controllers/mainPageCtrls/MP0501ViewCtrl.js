@@ -75,7 +75,7 @@ app.controller('MP0501ViewCtrl', function($scope, $ionicLoading) {
             }, function() {
                 console.log('get position error');
                 closeLoading();
-            });
+            }, { timeout: 5000, enableHighAccuracy: false });
         }
     };
 

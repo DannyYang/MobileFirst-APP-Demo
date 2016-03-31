@@ -51,6 +51,7 @@
 		471100FD1640064200670C3C /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 471100FC1640064200670C3C /* Default-568h@2x~iphone.png */; };
 		47F3D1F41723E20B004534C9 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F3D1F31723E20B004534C9 /* AssetsLibrary.framework */; };
 		5E144E0A180EEBA700A01719 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E144E09180EEBA700A01719 /* libstdc++.6.dylib */; };
+		6E2244861CACF81600D1F719 /* AppToAppPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2244851CACF81600D1F719 /* AppToAppPlugin.m */; };
 		6EADB97A1C8F1849007458A6 /* CDVBarcodeScanner.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6EADB9751C8F1849007458A6 /* CDVBarcodeScanner.bundle */; };
 		6EADB97B1C8F1849007458A6 /* CDVBarcodeScanner.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6EADB9761C8F1849007458A6 /* CDVBarcodeScanner.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6EADB97C1C8F1849007458A6 /* scannerOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EADB9771C8F1849007458A6 /* scannerOverlay.xib */; };
@@ -146,6 +147,8 @@
 		471100FC1640064200670C3C /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x~iphone.png"; path = "Resources/Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
 		47F3D1F31723E20B004534C9 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		5E144E09180EEBA700A01719 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		6E2244841CACF81600D1F719 /* AppToAppPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppToAppPlugin.h; sourceTree = "<group>"; };
+		6E2244851CACF81600D1F719 /* AppToAppPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppToAppPlugin.m; sourceTree = "<group>"; };
 		6EADB9751C8F1849007458A6 /* CDVBarcodeScanner.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CDVBarcodeScanner.bundle; sourceTree = "<group>"; };
 		6EADB9761C8F1849007458A6 /* CDVBarcodeScanner.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDVBarcodeScanner.mm; sourceTree = "<group>"; };
 		6EADB9771C8F1849007458A6 /* scannerOverlay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = scannerOverlay.xib; sourceTree = "<group>"; };
@@ -223,6 +226,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6E2244831CACF7F600D1F719 /* Plugins */,
 				6EADB9941C8FFC3C007458A6 /* PushNotification */,
 				6EADB9741C8F1802007458A6 /* QRCode */,
 				42B5EAC21250C4AF00DC666F /* tsb.h */,
@@ -346,6 +350,15 @@
 				428BCE041372799200AEB66F /* Icon-72.png */,
 			);
 			name = "Resources-iPad";
+			sourceTree = "<group>";
+		};
+		6E2244831CACF7F600D1F719 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				6E2244841CACF81600D1F719 /* AppToAppPlugin.h */,
+				6E2244851CACF81600D1F719 /* AppToAppPlugin.m */,
+			);
+			name = Plugins;
 			sourceTree = "<group>";
 		};
 		6EADB9741C8F1802007458A6 /* QRCode */ = {
@@ -526,6 +539,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				6EADB99A1C8FFC8A007458A6 /* PushPlugin.m in Sources */,
 				6EADB9991C8FFC8A007458A6 /* AppDelegate+notification.m in Sources */,
+				6E2244861CACF81600D1F719 /* AppToAppPlugin.m in Sources */,
 				6EADB97D1C8F1849007458A6 /* zxing-all-in-one.cpp in Sources */,
 				42B5EAC41250C4AF00DC666F /* tsb.m in Sources */,
 			);

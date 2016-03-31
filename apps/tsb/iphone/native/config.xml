@@ -196,4 +196,7 @@
     <feature name="PushPlugin">
         <param name="ios-package" value="PushPlugin" />
     </feature>
+    <feature name="AppToAppPlugin">
+        <param name="ios-package" value="AppToAppPlugin" />
+    </feature>
 </widget>

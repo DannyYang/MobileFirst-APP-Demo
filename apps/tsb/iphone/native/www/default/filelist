@@ -41,6 +41,7 @@
 /js/controllers/mainPageCtrls/MP0401ViewCtrl.js
 /js/controllers/mainPageCtrls/MP0501ViewCtrl.js
 /js/controllers/mainPageCtrls/MP0601ViewCtrl.js
+/js/controllers/mainPageCtrls/MP0701ViewCtrl.js
 /js/filter.js
 /js/initOptions.js
 /js/lib/ionic/angular-ui/angular-ui-router.js
@@ -77,6 +78,7 @@
 /views/mainPageViews/MPV0401.html
 /views/mainPageViews/MPV0501.html
 /views/mainPageViews/MPV0601.html
+/views/mainPageViews/MPV0701.html
 /worklight/cordova.js
 /worklight/cordova_plugins.js
 /worklight/messages/de/messages.json

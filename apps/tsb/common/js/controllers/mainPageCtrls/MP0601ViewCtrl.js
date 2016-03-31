@@ -1,7 +1,7 @@
 app.controller('MP0601ViewCtrl', function($scope, $ionicLoading, $cordovaDevice, APIService) {
 
     var UUID = $cordovaDevice.getDevice().uuid;
-    var fileUploadURL = "http://YOUR_SERVICE_IP:8080/ServletFileUploadSample/upload?file=";
+    var fileUploadURL = "http://YOUR_SERVER_IP:8080/ServletFileUploadSample/upload?file=";
 
     $scope.showPicture = function() {
         var d = new Date();

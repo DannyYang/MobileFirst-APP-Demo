@@ -49,7 +49,12 @@ var app = angular.module('mlApp', ['ionic', 'angularMoment', 'ngCordova'])
                 url: '/fileTransfer',
                 templateUrl: 'views/mainPageViews/MPV0601.html',
                 controller: 'MP0601ViewCtrl'
-            });
+            })
+            .state('appToApp', {
+                url: '/appToApp',
+                templateUrl: 'views/mainPageViews/MPV0701.html',
+                controller: 'MP0701ViewCtrl'
+            });;
 
         $urlRouterProvider.otherwise('/');
 
